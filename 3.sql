@@ -1,0 +1,1 @@
+select * from resultat_examen where (select COUNT(id) from resultat_examen where  resultat_examen.code_matiere == "ALG" and resultat_examen.note >= 10) >= 30
